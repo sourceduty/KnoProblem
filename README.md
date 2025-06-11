@@ -28,4 +28,15 @@ Additionally, KnoProblem can benefit from real-time adaptation and forecasting s
 
 #
 
+✅ The Goldbach Conjecture is the best immediate fit for applying the full ProblemKnock pipeline because:
+
+- P: Simple and precisely defined — "For all even integers >2, ∃ primes p, q such that p + q = n."
+- V: Primes, even integers, distribution functions, gaps.
+- M: Probabilistic models (e.g., Hardy–Littlewood, sieve theory), empirical primes databases.
+- G: Easily generate solution variants (pairs of primes for a given even n).
+- E: Can score based on frequency of success, prime gaps, probabilistic estimates.
+- SolReq: Works well here — Ci = "strength of heuristic or sieve method," Pi = "probability it explains the behavior for n→∞", N = number of tested methods.
+
+#
+
 [Math Tools](https://github.com/sourceduty/Math_Tools)
