@@ -14,16 +14,16 @@ KnoProblem guides users through:
 
 Enhanced Framework Equation (v2.0 - KnoProblem 2.0):
 
-V = f(P, M) + G · E(M, V) × R → S
+``` V = f(P, M) + G · E(M, V) × R → S ```
 
 New in v2.0:
 
 - R: Requirement compliance score
-  - SolReq_i = Σ(Ci · Pi · Ri) / N
-    - Ci: Change impact
-    - Pi: Probability the change is necessary
-    - Ri: Relevance or risk weight
-    - N: Normalization factor
+- SolReq_i = Σ(Ci · Pi · Ri) / N
+- Ci: Change impact
+- Pi: Probability the change is necessary
+- Ri: Relevance or risk weight
+- N: Normalization factor
 
 Other Enhancements:
 
