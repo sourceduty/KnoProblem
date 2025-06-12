@@ -8,14 +8,41 @@ What makes ProblemKnock particularly powerful is its extensibility and adaptive 
 
 #
 
-✅ The Goldbach Conjecture is the best immediate fit for applying the full ProblemKnock pipeline because:
+✅ The Goldbach Conjecture remains the best immediate fit for full deployment of the KnoProblem 2.5 pipeline, due to the following stage-aligned features:
 
-- P: Simple and precisely defined — "For all even integers >2, ∃ primes p, q such that p + q = n."
-- V: Primes, even integers, distribution functions, gaps.
-- M: Probabilistic models (e.g., Hardy–Littlewood, sieve theory), empirical primes databases.
-- G: Easily generate solution variants (pairs of primes for a given even n).
-- E: Can score based on frequency of success, prime gaps, probabilistic estimates.
-- SolReq: Works well here — Ci = "strength of heuristic or sieve method," Pi = "probability it explains the behavior for n→∞", N = number of tested methods.
+- P (Problem Space): 
+  Precisely articulated as “For all even integers n > 2, ∃ primes p, q such that p + q = n”; 
+  fits within number theory with well-defined scope and constraints.
+
+- V (Variables and Parameters): 
+  Includes even integers n, candidate primes (p, q), prime gaps, prime density functions, 
+  and probabilistic priors on prime distribution.
+
+- M (Mathematical Models): 
+  Probabilistic and analytic tools such as Hardy–Littlewood approximations, sieve methods, 
+  and empirical prime datasets; ensemble models can include symbolic regressions and PINNs.
+
+- G (Candidate Generation): 
+  For a given n, generator G outputs all prime-pair (p, q) combinations with p + q = n; 
+  stochastic variants or heuristic-guided selection can be implemented for large n.
+
+- E (Evaluation Function): 
+  Scoring based on prime pair occurrence frequency, prime gap distribution, 
+  statistical consistency with known behavior up to tested limits, 
+  and tractability for generalization.
+
+- R (Solution Requirement Compliance): 
+  Applies SolReq₂.₅:  
+    SolReqᵢ = Σ(Cᵢ · Pᵢ · Rᵢ) / N
+    where:
+      Cᵢ = strength of heuristic method or model's explanatory power,
+      Pᵢ = probability it extends to n → ∞ (inferred via Bayesian or empirical means),
+      Rᵢ = relevance factor (e.g., alignment with known results, analytical rigor),
+      N   = number of tested methods.
+
+- S (Selected Solution Set): 
+  Top-ranked conjectural paths and generator strategies prioritized by E × R score; 
+  candidates can be refined with new empirical data or theoretical insights.
 
 #
 
